@@ -1,12 +1,23 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;800&family=Roboto:wght@400;700&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+>>>>>>> 4ceccda810ddd66343cbc69ffe796cc997cdb8d1
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   font-family:Roboto;
 }
 
 .form-input {
+=======
+  font-family:cairo;
+}
+
+input, button {
+>>>>>>> 4ceccda810ddd66343cbc69ffe796cc997cdb8d1
   background-color: blue;
   color: white;
   border: none;
@@ -14,6 +25,7 @@
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .form-button {
   background-color: blue;
   color: white;
@@ -24,6 +36,9 @@
 
 
 .form {
+=======
+.App {
+>>>>>>> 4ceccda810ddd66343cbc69ffe796cc997cdb8d1
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -37,7 +52,10 @@
   background-color: #FFF;
   padding: 30px;
   height: 400px;
+<<<<<<< HEAD
   width: 400px;
+=======
+>>>>>>> 4ceccda810ddd66343cbc69ffe796cc997cdb8d1
   box-shadow: 40px 10px 20px rgba(5, 5, 235, 0.5);
   justify-content: center;
   

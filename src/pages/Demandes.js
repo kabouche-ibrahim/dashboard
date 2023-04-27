@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import "./Demandes.css";
 
@@ -64,6 +65,16 @@ const Demandes = ({ filter }) => {
         }    
      </div>   
   );
+=======
+import React from 'react';
+
+const Demandes = () => {
+    return (
+        <div>
+            <h1>Demandes</h1>
+        </div>
+    );
+>>>>>>> 4ceccda810ddd66343cbc69ffe796cc997cdb8d1
 };
 
 export default Demandes;
