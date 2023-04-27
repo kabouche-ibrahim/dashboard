@@ -6,9 +6,12 @@ import Demandes from "./pages/Demandes";
 import Stats from "./pages/Stats";
 import Sidebar from "./Components/Sidebar";
 import LoginForm from "./Components/loginform";
+import Navbar from "./Components/NavBar";
+import DemandeForm from "./pages/DemandeForm";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [selectedFilter, setSelectedFilter] = useState(null);
 
   const handleLogin = (username, password) => {
     if (username === "admin" && password === "admin") { 
@@ -20,11 +23,13 @@ const App = () => {
     <BrowserRouter>
       {isLoggedIn ? (
         <Sidebar>
+          <Navbar />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/Dashboard" element={<Dashboard />} />
-            <Route path="/Demandes" element={<Demandes />} />
+            <Route path="/" element={<Dashboard setSelectedFilter={setSelectedFilter} />} />
+            <Route path="/Dashboard" element={<Dashboard setSelectedFilter={setSelectedFilter} />} />
+            <Route path="/Demandes" element={<Demandes filter={selectedFilter} />} />
             <Route path="/Stats" element={<Stats />} />
+            <Route path="/DemandeForm" element={<DemandeForm />} />
           </Routes>
         </Sidebar>
       ) : (
